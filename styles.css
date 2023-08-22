@@ -109,13 +109,14 @@ button {
 /* for mobile devices */
 @media all and (max-width: 550px) {
   .details {
-    height: 300px;
+    /* to set itself the height based on the content */
+    height: auto;
     flex-direction: column;
     overflow-y: auto;
     text-align: center;
   }
 
   .detail {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 }
