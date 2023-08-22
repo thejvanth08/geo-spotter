@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: 0;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #0e2b4d;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--primary-color);
+  height: 100vh;
+}
+
+.header {
+  background-image: url(./assets/blue-bg.jpg);
+  background-size: cover;
+  height: 35vh;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.input-container {
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: transform 1s ease;
+}
+
+.input-container:hover {
+  transform: scale(1.05);
+}
+
+input {
+  width: 90%;
+  height: 35px;
+  padding: 12px;
+  font-size: 1rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /* default styles */
+  border: none;
+  /* outline comes while selecting */
+  outline: none;
+}
+
+button {
+  border: none;
+  width: 10%;
+  height: 35px;
+  padding: 5px;
+  color: #fff;
+  background-color: rgb(62, 98, 133);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.details {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 150px;
+  width: 80%;
+  margin: auto;
+  padding: 24px;
+  display: flex;
+  justify-content: space-evenly;
+
+  border-radius: 8px;
+  position: relative;
+  top: 28px;
+  z-index: 1000;
+  word-wrap: break-word;
+  box-shadow: 0px 1px 8px 1px grey;
+}
+
+.detail {
+  /* border-right: 2px solid grey; */
+  padding: 0 10px;
+}
+
+.details h4 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.details p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+#map {
+  height: 65vh;
+}
+
+/* for mobile devices */
+@media all and (max-width: 550px) {
+  .details {
+    height: 300px;
+    flex-direction: column;
+    overflow-y: auto;
+    text-align: center;
+  }
+
+  .detail {
+    margin-bottom: 16px;
+  }
+}
